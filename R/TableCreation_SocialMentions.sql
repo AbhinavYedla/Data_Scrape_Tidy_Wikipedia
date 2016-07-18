@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS social_mentions (
+    date DATE NOT NULL,
+    source VARCHAR(15) NOT NULL,
+    term VARCHAR(40) NOT NULL,
+    strength INTEGER DEFAULT NULL,
+    sentiment VARCHAR(40) DEFAULT NULL,
+    passion INTEGER DEFAULT NULL,
+    reach INTEGER DEFAULT NULL,
+       timeframe VARCHAR(10) DEFAULT NULL,
+    PRIMARY KEY (date , source , term)
+)  ENGINE=INNODB DEFAULT CHARACTER SET=UTF8MB4;
